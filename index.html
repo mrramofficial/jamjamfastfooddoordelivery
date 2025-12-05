@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jam Jam</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Jam Jam</title>
   <style>    :root {
       --bg: #0f1115;
       --card: #161a21;
@@ -23,12 +23,7 @@
       background: linear-gradient(180deg, #0f1115 0%, #0f1115cc 100%);
       backdrop-filter: blur(6px); border-bottom: 1px solid var(--border);
     }
-    .wrap  {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 14px 16px;
-}
-
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 14px 16px }
     .brand {
 
       display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
@@ -49,7 +44,7 @@
     main { padding: 20px 16px }
     .grid {
       display: grid; gap: 14px;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     }
     .card {
       background: var(--card); border: 1px solid var(--border);
@@ -180,6 +175,8 @@
       { id: 13, name: "Fish Fry", price: 60, unit: "100 g", category: "Fish", img: "https://i.pinimg.com/736x/0d/74/0c/0d740ce3d33a9853e1dccb11080bc19d.jpg" },
       { id: 14, name: "Mutton Soup", price: 30, unit: "150 ml", category: "Soup", img: "https://i.pinimg.com/736x/88/34/a5/8834a572aa4757ff4b6b8ca52085e963.jpg" },
       { id: 15, name: "Chicken Manchurian", price: 60, unit: "250 g", category: "Chicken", img: "https://i.pinimg.com/736x/19/cf/e3/19cfe3d8cf5c73220ffe80885f63645c.jpg" },
+ 
+    ];
 
     // State
     const state = { cart: [], search: "", category: "all" };
@@ -348,6 +345,8 @@ const total = cartTotal + deliveryCharge;
   </script>
 </body>
 </html>
+
+
 
 
 
